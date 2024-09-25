@@ -1,2 +1,2 @@
 #Hi im Shoenandia Aryasuta Rizqullah
-![Uploading image.png…]()
+#![image](https://github.com/user-attachments/assets/76952ea2-faba-45d9-ae3c-2b9bed067443)
