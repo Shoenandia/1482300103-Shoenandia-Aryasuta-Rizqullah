@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background-color: #cf65dd;
+}
+
+/* Gaya untuk Tombol */
+.btn {
+    margin-top: 10px;
+}
+
+/* Gaya untuk Gambar Profil */
+.img-fluid {
+    border: 2px solid #007bff;
+}
+
+/* Gaya untuk Link */
+a {
+    color: #007bff;
+    text-decoration-line: line-through;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Gaya untuk Mode Gelap */
+body.dark-mode {
+    background-color: #343a40;
+    color: white;
+}
+
+.dark-mode a {
+    color: #ffffff;
+}
+
+.dark-mode .btn {
+    background-color: #495057;
+    color: white;
+}
+
+/* Gaya untuk Heading */
+h1, h2, h3 {
+    text-shadow: #121212;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+/* Gaya untuk Paragraf */
+p {
+    margin-bottom: 15px;
+}
+
+/* Gaya untuk List */
+ul.list-unstyled {
+    padding-left: 0;
+}
+
+body.dark-mode {
+    background-color: #121212; /* Warna latar belakang gelap */
+    color: #ffffff; /* Warna teks terang */
+}
+
+body.dark-mode a {
+    color: #bb86fc; /* Warna tautan terang */
+}
+
+body.dark-mode .btn {
+    background-color: #3700b3; /* Warna tombol gelap */
+    color: #ffffff; /* Warna teks tombol terang */
+}
+/* Animasi untuk menampilkan dan menyembunyikan elemen */
+.fade-in {
+    animation: fadeIn 0.5s forwards;
+}
+
+.fade-out {
+    animation: fadeOut 0.5s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+}
+
+body.dark-mode {
+    background-color: #121212; /* Warna latar belakang gelap */
+    color: #ffffff; /* Warna teks terang */
+}
+
+body.dark-mode a {
+    color: #bb86fc; /* Warna tautan terang */
+}
+
+body.dark-mode .btn {
+    background-color: #3700b3; /* Warna tombol gelap */
+    color: #ffffff; /* Warna teks tombol terang */
+}
