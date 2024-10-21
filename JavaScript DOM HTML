@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh HTML DOM</title>
+    <style>
+        .highlight { background-color: yellow; }
+    </style>
+</head>
+<body>
+    <h1 id="judul">Selamat datang di HTML DOM</h1>
+    <p class="teks">Ini adalah contoh paragraf.</p>
+    <p class="teks">Ini adalah contoh paragraf kedua.</p>
+    <button onclick="ubahTeks()">Ubah Teks</button>
+
+    <script>
+        function ubahTeks() {
+            // Mengubah teks elemen dengan ID 'judul'
+            document.getElementById("judul").innerHTML = "Teks telah diubah!";
+
+            // Mengambil semua elemen dengan kelas 'teks'
+            var paragraf = document.getElementsByClassName("teks");
+            for (var i = 0; i < paragraf.length; i++) {
+                paragraf[i].classList.add("highlight"); // Menambahkan kelas highlight
+            }
+        }
+    </script>
+</body>
+</html>
