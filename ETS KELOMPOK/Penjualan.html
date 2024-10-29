@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Store</title>
+    <link rel="stylesheet" href="Penjualan.css">
+</head>
+
+<body>
+    <header>
+        <h1>Sneakers Shoes</h1>
+        <p>Tampil stylish dengan produk fashion terbaik</p>
+        <div class="nav-container">
+            <div class="logo">
+                <img src="https://media.istockphoto.com/id/1330796114/id/vektor/desain-templat-logo-sepatu-cepat.jpg?s=170667a&w=0&k=20&c=PAywUCAb9yvpGXld1ZnnW7aKseEEDWxzT_rvKKwnZLQ=" alt="Logo Sneakers Shoes">
+            </div>
+            <nav class="nav-links">
+                <a href="#">Produk</a>
+                <a href="#">Promo</a>
+                <a href="#">Top Sales</a>
+            </nav>
+            <div class="search-container">
+                <input type="text" placeholder="Cari produk...">
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="menu">
+            <button class="menu-btn active">Shop Men's</button>
+            <button class="menu-btn">Shop Women's</button>
+            <button class="menu-btn">Shop Kid's</button>
+        </div>
+
+        <div class="products">
+            <div class="product-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW5DA6aB6CnmhkajbNhhbaTTdlVxsmEciNRQ&s" alt="Nineten Shoes">
+                <p>Nineten</p>
+                <span class="price">Rp. 1.800.000</span>
+            </div>
+            <div class="product-card">
+                <img src="https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full//100/MTA-9947116/lvnatica_footwear_foutten_sepatu_sneakers_pria_diesel_white_kasual_outdoor_original_full01_q2ehyo2y.jpg" alt="Zensha Shoes">
+                <p>Zensha</p>
+                <span class="price">Rp. 1.909.000</span>
+            </div>
+            <div class="product-card">
+                <img src="https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full/catalog-image/100/MTA-160563663/brd-108397_rainbow-sepatu-sneakers-casual-wanita-women-shoes-sporty-look-pu-37-40-0064_full01-9a94baf9.jpg" alt="Pollapoli Shoes">
+                <p>Pollapoli</p>
+                <span class="price">Rp. 659.000</span>
+            </div>
+            <div class="product-card">
+                <img src="https://contents.mediadecathlon.com/p2638796/k$b591147997e399777559857e34bb28a5/sepatu-running-wanita-jogflow-190-1-run-putih-pink-kiprun-8757345.jpg?f=1920x0&format=auto" alt="New Balance Shoes">
+                <p>New Balance</p>
+                <span class="price">Rp. 1.500.000</span>
+            </div>
+        </div>
+    </div>
+
+    <section id="order-form">
+        <h2>Pemesanan</h2>
+        <form id="formOrder">
+            <label for="name">Nama Pemesan:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="product">Produk Pilihan:</label>
+            <select id="product" name="product">
+                <option value="Nineten">Nineten</option>
+                <option value="Zensha">Zensha</option>
+                <option value="Pollapoli">Pollapoli</option>
+                <option value="New Balance">New Balance</option>
+            </select>
+
+            <label for="quantity">Jumlah:</label>
+            <input type="number" id="quantity" name="quantity" min="1" required>
+
+            <button type="button" onclick="submitOrder()">Pesan Sekarang</button>
+        </form>
+    </section>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <h2>Pesanan Anda Telah Diterima!</h2>
+            <p>Terima kasih, <span id="popup-name"></span>! Anda telah memesan <span id="popup-product"></span> <span id="popup-quantity"></span>.</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-section">
+            <h3>Policies</h3>
+            <a href="#">Term & Conditions</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Return Policy</a>
+        </div>
+        <div class="footer-section">
+            <h3>Resources</h3>
+            <a href="#">My Fila</a>
+        </div>
+        <div class="footer-section">
+            <h3>Contact</h3>
+            <a href="#">Customer Care</a>
+            <a href="#">About Us</a>
+        </div>
+        <div class="footer-section social-media">
+            <p>Connect With Us</p>
+            <div class="social-icons">
+                <a href="#"><img src="icon-twitter.png" alt="Twitter"></a>
+                <a href="#"><img src="icon-instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="icon-facebook.png" alt="Facebook"></a>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="Penjualan.js"></script>
+</body>
+</html>
